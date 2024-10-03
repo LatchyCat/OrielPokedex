@@ -1,0 +1,132 @@
+General Styling
+.container {
+    padding: 20px;
+    font-family: 'Pokemon Font', sans-serif; /* Ensure to use the Pokémon-themed font */
+    background-color: #f8f8f8; /* Light background for better contrast */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+   /* Upgraded h1 - Pokémon-style Title */
+h1 {
+  text-align: center;
+  color: #ff0000; /* Bold Pokémon red */
+  margin-bottom: 20px;
+  font-family: 'Pokemon Font', sans-serif;
+  font-size: 48px; /* Larger for a more impressive effect */
+  letter-spacing: 2px; /* Slight letter spacing for a stronger visual */
+  text-transform: uppercase; /* Uppercase for a bold title style */
+  text-shadow: 3px 3px 0 #000000, 6px 6px 0 #ffcb05; /* Pokémon-themed text shadow with yellow and black */
+  animation: shake 1.5s ease-in-out infinite; /* Add a fun shake animation */
+}
+
+/* h1 Animation: Shake Effect (optional, playful) */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Upgraded h2 - Subheadings */
+h2 {
+  color: #34495e; /* Darker tone for contrast */
+  margin-bottom: 15px;
+  font-family: 'Pokemon Font', sans-serif;
+  font-size: 32px; /* Larger for better hierarchy */
+  letter-spacing: 1px; /* Slight spacing for cleaner appearance */
+  text-transform: uppercase; /* Uppercase to match the style of h1 */
+  text-shadow: 2px 2px 0 #ccc; /* Subtle shadow for depth */
+  position: relative;
+  overflow: hidden;
+}
+
+/* h2 Animation: Gradient Hover Effect */
+h2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  /* background: linear-gradient(120deg, transparent, #e6e3da, transparent); */
+  transition: 0.5s ease;
+}
+
+h2:hover::before {
+  left: 100%;
+}
+
+  /* General Styling */
+.container {
+  padding: 20px;
+  font-family: 'Pokemon Font', sans-serif; /* Ensure to use the Pokémon-themed font */
+  background-color: #f0f8ff; /* Lighter background for better contrast */
+  border-radius: 15px; /* Slightly increased border radius for modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+}
+
+/* Comparison Item */
+.comparisonItem {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Increased opacity for better readability */
+  padding: 15px; /* Slightly increased padding */
+  border-radius: 12px; /* Adjusted radius for softer corners */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background transition */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+}
+
+.comparisonItem:hover {
+  transform: translateY(-5px); /* Increased hover lift */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background-color: rgba(255, 223, 186, 0.9); /* Light Pokémon-themed background on hover */
+}
+
+/* Pokémon Image */
+.pokemonImage {
+  width: 70px; /* Adjust size for better visibility */
+  height: 70px; /* Ensure square image */
+  border-radius: 12px; /* Updated radius for a softer look */
+  border: 3px solid #ff4500; /* More vibrant Pokémon-themed border */
+  margin-right: 20px; /* Increased space between image and text */
+  transition: transform 0.2s ease; /* Added transition for image scaling */
+}
+
+.pokemonImage:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Weaknesses Text */
+p {
+  color: #333; /* Darker for better contrast */
+  font-size: 1rem; /* Adjusted font size for readability */
+  line-height: 1.5; /* Increased line height for better spacing */
+  background: linear-gradient(135deg, #ffcccb 30%, #ffd700 70%); /* Subtle gradient background */
+  padding: 10px; /* Added padding for better text spacing */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+p:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
+  background: linear-gradient(135deg, #ff9999 30%, #ffd700 70%); /* Darker gradient on hover for emphasis */
+}
+
+/* No Pokémon Message */
+.noPokémon {
+  text-align: center;
+  color: #ff6347; /* A more vibrant warning color */
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size for emphasis */
+  margin-top: 30px; /* Increased margin for better spacing */
+}

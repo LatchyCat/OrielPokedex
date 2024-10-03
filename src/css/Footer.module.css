@@ -1,0 +1,13 @@
+/* Footer.module.css */
+.footer {
+    background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
+    padding: 20px;
+    text-align: center; /* Center-align the content */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Shadow to separate from main content */
+    margin-top: 20px; /* Space from the content above */
+  }
+
+  .footerContent {
+    max-width: 1200px; /* Optional: limit max width */
+    margin: auto; /* Center the content */
+  }

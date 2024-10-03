@@ -1,0 +1,25 @@
+.searchResults {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    max-height: 200px; /* Optional: Limit height */
+    overflow-y: auto; /* Optional: Add scroll if too many results */
+}
+
+.searchResult {
+    display: flex; /* Flexbox for better alignment */
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.pokemonImage {
+    width: 40px; /* Size of Pokémon images */
+    height: 40px; /* Size of Pokémon images */
+    margin-right: 8px; /* Space between image and name */
+}
+
+.searchResult:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}

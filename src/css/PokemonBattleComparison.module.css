@@ -1,0 +1,208 @@
+/* PokemonBattleComparison.module.css */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+/* Keeping the title as you like it */
+.title {
+  font-size: 48px; /* Larger and bolder font */
+  font-weight: 900;
+  color: #ffcb05; /* Pokémon signature yellow */
+  text-shadow: 3px 3px 0 #3b4cca, 6px 6px 0 #ffcb05, 9px 9px 0 #3b4cca; /* Double color shadow */
+  text-transform: uppercase;
+  animation: titleEffect 2s ease-in-out infinite;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+/* New structure for container and layout */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.battleContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.teamColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.controlsSection {
+  background-color: #f1f1f1;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Make sure any overflow stays within bounds */
+}
+
+.userControls {
+  border: 2px solid #e74c3c;
+  background-color: #fdecea;
+}
+
+.enemyControls {
+  border: 2px solid #3498db;
+  background-color: #ebf5fb;
+}
+/* Search Container - Fixing overflow issue */
+.searchContainer {
+  width: 100%; /* Ensure the search container fills the parent */
+  position: relative;
+  margin-bottom: 16px;
+  padding: 0; /* Remove any padding that might push it out */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.searchResults {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.searchResult {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.searchResult:hover {
+  background-color: #f0f0f0;
+}
+
+/* Fixing the Input field */
+input {
+  width: 100%; /* Ensures the input takes the full width of its container */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.teamSection {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userTeam {
+  border-color: #e74c3c;
+}
+
+.enemyTeam {
+  border-color: #3498db;
+}
+
+.teamTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Pokemon card for a clear and visible layout */
+.pokemonCard {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pokemonCard:hover {
+  transform: translateY(-5px);
+}
+
+.pokemonImage {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 8px;
+}
+
+.pokemonName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.pokemonTypes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.typeTag {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.normal { background-color: #A8A878; }
+.fire { background-color: #F08030; }
+.water { background-color: #6890F0; }
+.electric { background-color: #F8D030; color: black; }
+.grass { background-color: #78C850; }
+.ice { background-color: #98D8D8; color: black; }
+.fighting { background-color: #C03028; }
+.poison { background-color: #A040A0; }
+.ground { background-color: #E0C068; color: black; }
+.flying { background-color: #A890F0; }
+.psychic { background-color: #F85888; }
+.bug { background-color: #A8B820; }
+.rock { background-color: #B8A038; }
+.ghost { background-color: #705898; }
+.dragon { background-color: #7038F8; }
+.dark { background-color: #705848; }
+.steel { background-color: #B8B8D0; color: black; }
+.fairy { background-color: #EE99AC; color: black; }
+
+/* Pokemon stats */
+.pokemonStats {
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  color: #666;
+  font-weight: bold;
+}

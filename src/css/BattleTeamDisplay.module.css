@@ -1,0 +1,52 @@
+.battleTeamContainer {
+  margin-top: 20px; /* Space from the top */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teamList {
+  display: flex;
+  flex-direction: column; /* Arrange Pokémon items vertically */
+  gap: 10px; /* Space between items */
+}
+
+.pokemonItem {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Space between Pokémon image, name, and button */
+  padding: 8px;
+  background-color: #ffffff; /* Pokémon card background */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pokemonImage {
+  width: 60px; /* Adjust size as necessary */
+  height: 60px;
+  border-radius: 50%; /* Optional: round the image */
+  border: 2px solid #ff0000; /* Pokémon theme border */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.pokemonName {
+  flex: 1; /* Take remaining space */
+  font-size: 1rem;
+  color: #333; /* Pokémon name color */
+}
+
+.removeButton {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #ff3333;
+}

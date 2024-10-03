@@ -1,0 +1,31 @@
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color for contrast */
+  font-family: 'Pokemon Font', sans-serif; /* Use a Pokémon-themed font if available */
+}
+
+.loadingImage img {
+  width: 150px; /* Adjust as necessary */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loadingText {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+  color: #ff0000; /* Pokémon red color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
+}
+
+.loadingSubtext {
+  font-size: 1rem;
+  color: #666; /* Slightly lighter text color */
+  text-align: center; /* Center align for better aesthetics */
+}
+
+/* You can add more styles to enhance the design further */

@@ -1,0 +1,45 @@
+.pokemonNavigation {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    align-items: center; /* Center buttons vertically */
+    padding: 10px; /* Add padding around the buttons */
+    max-width: 800px; /* Optional: Set a max width for the navigation */
+    margin: 0 auto; /* Center the navigation within its parent */
+    background-color: rgba(255, 255, 255, 0.8); /* Background for visibility */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+
+  .pokemonButton {
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    transition: background-color 0.3s; /* Smooth background change */
+  }
+
+  .pokemonButton:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover for effect */
+  }
+
+  /* Specific button styles */
+  .previousButton {
+    background-color: #007bff; /* Button color for previous */
+  }
+
+  .previousButton:hover {
+    background-color: #0056b3; /* Darker shade on hover for previous */
+  }
+
+  .nextButton {
+    background-color: #28a745; /* Button color for next */
+  }
+
+  .nextButton:hover {
+    background-color: #218838; /* Darker shade on hover for next */
+  }
+
+  .disabledButton {
+    background-color: #6c757d; /* Disabled button color */
+    cursor: not-allowed; /* Not allowed cursor for disabled */
+  }

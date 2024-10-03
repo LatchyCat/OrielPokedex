@@ -1,0 +1,175 @@
+.pokemonList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pokemonCard {
+  background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.pokemonCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pokemonCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #ff0000, #cc0000);
+}
+
+.cardContent {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.pokemonName {
+  font-size: 1.2rem;
+  color: #333;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.pokemonImage {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.pokemonCard:hover .pokemonImage {
+  transform: scale(1.1);
+}
+
+.statsContainer {
+  margin-top: 15px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.statsTitle {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.statsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.statItem {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between icon, name, and value */
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.statIcon {
+  margin-right: 5px; /* Space between icon and stat name */
+}
+
+/* Adjust color styles for different stats as needed */
+.statName {
+  text-transform: capitalize;
+  color: #666;
+  flex: 1; /* Allow name to take up available space */
+}
+
+.statValue {
+  font-weight: 600;
+  color: #333;
+}
+
+/* FontAwesome Icon Styles */
+.statName i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.statName .fa-heart {
+  color: red; /* For HP (Health) */
+}
+
+.statName .fa-dumbbell {
+  color: #ff7f00; /* For Attack */
+}
+
+.statName .fa-shield-alt {
+  color: #00bfff; /* For Defense */
+}
+
+.statName .fa-magic {
+  color: purple; /* For Special Attack */
+}
+
+.statName .fa-shield-virus {
+  color: #228b22; /* For Special Defense */
+}
+
+.statName .fa-bolt {
+  color: gold; /* For Speed */
+}
+
+/* Button Styles */
+.evolutionButton {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff0000, #cc0000);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.evolutionButton:hover {
+  background: linear-gradient(90deg, #cc0000, #ff0000);
+}
+
+/* Responsive design */
+@media (max-width: 1400px) {
+  .pokemonList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .pokemonList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pokemonList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pokemonList {
+    grid-template-columns: 1fr;
+  }
+}
